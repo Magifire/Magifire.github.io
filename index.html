@@ -737,6 +737,7 @@ function startEditor(zip) {
 }
 
 function preloadZip(target) {
+	alert(target);
 	return new Promise(function (resolve, reject) {
 		if (target.files.length > 0) {
 			target.files[0].arrayBuffer().then(function (data) {
